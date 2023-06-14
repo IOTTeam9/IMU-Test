@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/azi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azimuth" />
+
+        <TextView
+            android:id="@+id/X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X" />
+
+        <TextView
+            android:id="@+id/Y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y" />
+
+        <TextView
+            android:id="@+id/Z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z" />
+
+        <TextView
+            android:id="@+id/CTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/directionChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/movementChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
